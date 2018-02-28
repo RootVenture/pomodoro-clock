@@ -16,11 +16,7 @@ const breakClr = 'rgb(255,50,50)';
 function updateFill(percentage) {
   fill.style.height = `${percentage * 100}%`;
   fill.style.backgroundColor = `${task ? sessionClr : breakClr}`;
-  if (!task) {
-    displayDiv.style.border = `3px solid ${breakClr}`;
-  } else {
-    displayDiv.style.border = `3px solid ${sessionClr}`;
-  }
+  displayDiv.style.border = `3px solid ${task ? sessionClr : breakClr}`;
 }
 
 function clearStyles() {
