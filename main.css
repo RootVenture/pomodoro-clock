@@ -1,18 +1,18 @@
 /* force box border */
 html {
-	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
-	text-align: center;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	line-height: 1.6;
+  line-height: 1.6;
 }
 
 h1,
@@ -20,34 +20,35 @@ h2,
 h3,
 h4,
 h5 {
-	line-height: 1.2;
+  line-height: 1.2;
 }
 
 .container {
-	margin: 0 auto;
-	padding: 0 10px;
-	max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 375px;
 }
 
 /* The row is basically a clearfix hack; no styling gets applied to this element. It simply exists for you to contain your columns. */
 .row::before,
 .row::after {
-	display: table;
-	content: " ";
-	clear: both;
+  display: table;
+  content: " ";
+  clear: both;
 }
 
 h1 {
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h2 {
-	font-weight: 300;
+  font-weight: 300;
 }
 @media screen and (min-width: 800px) {
-	h1 {
-		font-size: 2rem;
-	}
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 /* style for all of our buttons or any other elements that may be used as buttons */
@@ -56,79 +57,96 @@ a.button,
 button,
 [type="button"],
 [type="submit"] {
-	display: inline-block;
-	background: #e76c67;
-	border: 1px solid #e76c67;
-	color: white;
-	text-decoration: none;
-	font-weight: 400;
-	font-size: 0.95rem;
-	font-family: "Roboto", sans-serif;
-	padding: 0.5rem 1rem;
-	vertical-align: middle;
-	white-space: nowrap;
-	cursor: pointer;
-	line-height: 1;
-	/* margin: 0.25rem 0; */
-	border-radius: 18px;
+  display: inline-block;
+  background: #e76c67;
+  border: 1px solid #e76c67;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.95rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 1;
+  /* margin: 0.25rem 0; */
+  border-radius: 18px;
 }
 
 .plus,
 .start {
-	background: #1e6bd6;
-	border: 1px solid #1e6bd6;
+  background: #1e6bd6;
+  border: 1px solid #1e6bd6;
 }
 
 span {
-	font-size: 1.7rem;
-	font-weight: 300;
-	/* margin: 0.25rem 0; */
+  font-size: 1.7rem;
+  font-weight: 300;
+  /* margin: 0.25rem 0; */
 }
 
 .timer__controls {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .timer__controls div {
-	padding: 20px;
+  padding: 20px;
 }
 
 .display {
-	margin: 0 auto;
-	text-align: center;
-	border: 3px solid #99cc00;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	margin-bottom: 15px;
-	z-index: 20;
-	position: relative;
-	overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #99cc00;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  z-index: 20;
+  position: relative;
+  overflow: hidden;
 }
 
 .display__time-left {
-	display: block;
-	line-height: 100px;
-	font-size: 3rem;
+  display: block;
+  line-height: 100px;
+  font-size: 3rem;
 }
 
 .display__session {
-	display: block;
-	font-size: 3rem;
+  display: block;
+  font-size: 3rem;
 }
 
 .display__end-time {
-	display: block;
-	font-size: 2rem;
+  display: block;
+  font-size: 2rem;
 }
 
 .fill {
-	content: "";
-	position: absolute;
-	background: #99cc00;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: -1;
+  content: "";
+  position: absolute;
+  background: #99cc00;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-weight: 200;
+  color: #555555;
+  opacity: 0.75;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 17%;
+  opacity: 0.95;
+}
+
+.footer span {
+  font-size: 1rem;
 }
